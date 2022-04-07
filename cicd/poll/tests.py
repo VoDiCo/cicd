@@ -10,4 +10,5 @@ class ModelTesting(TestCase):
 
     def test_model_create(self):
         d = self.blog
-        self.assertTrue(isinstance(d, Poll))
+        self.assertTrue(isinstance(d, Pols))
+        
