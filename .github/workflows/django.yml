@@ -28,7 +28,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       env:
-        SECRET_KEY: _77xucoges0bex%gc_bcw70*l8$!0i!m8&l5hq!+@+p&xzqvab
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
       run: |
         cd cicd
         python manage.py test
