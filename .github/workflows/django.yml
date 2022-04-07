@@ -13,7 +13,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.8]
+        python-version: [ 3.8 ]
 
     steps:
     - uses: actions/checkout@v3
@@ -31,4 +31,4 @@ jobs:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
       run: |
         cd cicd
-        coverage run -m unittest discover 
+        coverage run manage.py test
