@@ -31,4 +31,4 @@ jobs:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
       run: |
         cd cicd
-        python manage.py test
+        coverage run -m unittest discover 
