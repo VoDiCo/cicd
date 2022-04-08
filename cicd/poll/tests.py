@@ -10,5 +10,9 @@ class ModelTesting(TestCase):
 
     def test_model_create(self):
         d = self.blog
-        self.assertTrue(isinstance(d, Pols))
+        self.assertTrue(isinstance(d, Poll))
+
+    def test_poll_model_str_method(self):
+        title = self.blog
+        self.assertEqual(str(title), title.title)
         
